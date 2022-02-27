@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 // add bootstrap collapse functionality
 import "bootstrap/js/dist/collapse";
+import "font-awesome/css/font-awesome.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
