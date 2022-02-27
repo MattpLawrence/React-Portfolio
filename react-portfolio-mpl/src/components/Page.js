@@ -3,6 +3,8 @@ import Header from "./Header";
 import About from "./About";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import Project from "./Project";
+import Contact from "./Contact";
 
 function Page() {
   const [pageNav, setPageNav] = useState("About");
@@ -10,19 +12,23 @@ function Page() {
   const changePage = (e) => {
     const name = e.target.name;
     setPageNav(name);
-    console.log(name);
-
-    console.log(`pageNav = ${pageNav}`);
+  };
+  const renderPage = () => {
+    if (pageNav == "About") {
+      return <About />;
+    } else if (pageNav == "Project") {
+      return <Project />;
+    }
   };
 
   return (
     <div>
-      <Navigation
+      <Header
         pageNav={pageNav}
         setPageNav={setPageNav}
         changePage={changePage}
       />
-      <About />
+      {renderPage()}
       <Footer />
     </div>
   );

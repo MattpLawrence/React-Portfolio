@@ -1,3 +1,5 @@
+// this is a completely pointless component, but it was outlined in the requirements
+
 import React from "react";
 import Navigation from "./Navigation";
 

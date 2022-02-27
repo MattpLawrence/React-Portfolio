@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function Navigation(props) {
   const pageNav = props.pageNav;
-
   const changePage = props.changePage;
 
   return (
