@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// add bootstrap styling
 import "bootstrap/dist/css/bootstrap.css";
+// add bootstrap collapse functionality
+import "bootstrap/js/dist/collapse";
 
 ReactDOM.render(
   <React.StrictMode>
