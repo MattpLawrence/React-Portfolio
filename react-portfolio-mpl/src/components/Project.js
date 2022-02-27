@@ -1,4 +1,5 @@
 import React from "react";
+import projectList from "./subComponents/projectList";
 
 function Project() {
   return (
