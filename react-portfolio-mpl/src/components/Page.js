@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import About from "./About";
 import Footer from "./Footer";
+import Navigation from "./Navigation";
 
 function Page() {
   const [pageNav, setPageNav] = useState("About");
@@ -16,7 +17,7 @@ function Page() {
 
   return (
     <div>
-      <Header
+      <Navigation
         pageNav={pageNav}
         setPageNav={setPageNav}
         changePage={changePage}

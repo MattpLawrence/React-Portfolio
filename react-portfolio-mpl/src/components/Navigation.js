@@ -2,65 +2,69 @@ import React, { useState } from "react";
 
 function Navigation(props) {
   const pageNav = props.pageNav;
-  const setPageNav = props.setPageNav;
-  const changePage = (e) => {
-    const name = e.target.name;
-    setPageNav(name);
-    console.log(name);
 
-    console.log(`pageNav = ${pageNav}`);
-  };
+  const changePage = props.changePage;
 
   return (
-    <div className="container-fluid">
-      <a className="navbar-brand" href="#">
-        Matt Lawrence
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a
-              className={pageNav == "About" ? "nav-link active" : "nav-link"}
-              href="#"
-              onClick={changePage}
-              name="About"
-            >
-              About Me
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className={pageNav == "Project" ? "nav-link active" : "nav-link"}
-              href="#"
-              onClick={changePage}
-              name="Project"
-            >
-              Projects
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className={pageNav == "Contact" ? "nav-link active" : "nav-link"}
-              href="#"
-              onClick={changePage}
-              name="Contact"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Matt Lawrence
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a
+                  className={
+                    pageNav == "About" ? "nav-link active" : "nav-link"
+                  }
+                  href="#"
+                  onClick={changePage}
+                  name="About"
+                >
+                  About Me
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={
+                    pageNav == "Project" ? "nav-link active" : "nav-link"
+                  }
+                  href="#"
+                  onClick={changePage}
+                  name="Project"
+                >
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={
+                    pageNav == "Contact" ? "nav-link active" : "nav-link"
+                  }
+                  href="#"
+                  onClick={changePage}
+                  name="Contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }
