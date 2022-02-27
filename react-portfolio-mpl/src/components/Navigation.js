@@ -5,7 +5,10 @@ function Navigation() {
 
   const changePage = (e) => {
     const name = e.target.name;
+    setPageNav(name);
     console.log(name);
+
+    console.log(`pageNav = ${pageNav}`);
   };
 
   return (
@@ -27,7 +30,12 @@ function Navigation() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link " href="#" onClick={changePage} name="About">
+            <a
+              className={pageNav == "About" ? "nav-link active" : "nav-link"}
+              href="#"
+              onClick={changePage}
+              name="About"
+            >
               About Me
             </a>
           </li>
