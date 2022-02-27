@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-function Navigation() {
-  const [pageNav, setPageNav] = useState("About");
-
+function Navigation(props) {
+  const pageNav = props.pageNav;
+  const setPageNav = props.setPageNav;
   const changePage = (e) => {
     const name = e.target.name;
     setPageNav(name);
@@ -41,7 +41,7 @@ function Navigation() {
           </li>
           <li className="nav-item">
             <a
-              className="nav-link"
+              className={pageNav == "Project" ? "nav-link active" : "nav-link"}
               href="#"
               onClick={changePage}
               name="Project"
@@ -51,7 +51,7 @@ function Navigation() {
           </li>
           <li className="nav-item">
             <a
-              className="nav-link"
+              className={pageNav == "Contact" ? "nav-link active" : "nav-link"}
               href="#"
               onClick={changePage}
               name="Contact"
