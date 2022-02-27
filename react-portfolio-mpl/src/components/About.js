@@ -1,11 +1,16 @@
 import React from "react";
+import "../styles/About.css";
 
 function About() {
   return (
     <div>
       <section id="one">
-        <div className="imgMain" data-position="center">
-          <img src="images/meStanding.jpg" alt="" />
+        <div data-position="center">
+          <img
+            src="images/meAvatar.jpg"
+            className="imgMain"
+            alt="Profile Picture"
+          />
         </div>
         <div className="container">
           <header className="major">
