@@ -1,24 +1,26 @@
 import React from "react";
 import "../styles/Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
     <div>
       <ul className="icons">
         <li className="contactLI">
-          <a href="mailto: MattphLawrence@gmail.com">
-            <i className="fa fa-envelope footerIcon"></i>
-          </a>
+          <FontAwesomeIcon icon={faEnvelope} className="fa" />
+          <a href="mailto: MattphLawrence@gmail.com"></a>
         </li>
         <li className="contactLI">
+          <FontAwesomeIcon icon={faLinkedin} className="fa" />
           <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank">
-            <i className="fa-brands fa-linkedin footerIcon"></i>
+            {" "}
           </a>
         </li>
         <li className="contactLI">
-          <a href="https://github.com/MattpLawrence" target="_blank">
-            <i className="fa fa-github footerIcon"></i>
-          </a>
+          <FontAwesomeIcon icon={faGithub} className="fa" />
+          <a href="https://github.com/MattpLawrence" target="_blank"></a>
         </li>
       </ul>
     </div>

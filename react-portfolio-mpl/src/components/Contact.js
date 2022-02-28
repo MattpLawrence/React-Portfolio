@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -6,10 +7,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <div>
-      <ul>
+      <ul className="contactUL">
         <li className="contactLI">
           <FontAwesomeIcon icon={faEnvelope} className="fa" />
-          MattphLawrence@gmail.com
+          <a href="mailto: MattphLawrence@gmail.com">MattphLawrence</a>
         </li>
         <li className="contactLI">
           <FontAwesomeIcon icon={faLinkedin} className="fa" />

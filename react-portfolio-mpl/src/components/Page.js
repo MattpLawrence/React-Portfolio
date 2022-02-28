@@ -18,11 +18,17 @@ function Page() {
   // conditionally render correct page based on nav state
   const renderPage = () => {
     if (pageNav == "About") {
-      return <About />;
+      return (
+        <div>
+          <About />
+          <Footer />
+        </div>
+      );
     } else if (pageNav == "Project") {
       return (
         <div className="cardContainer">
           <Project />
+          <Footer />
         </div>
       );
     } else if (pageNav == "Contact") {
@@ -43,7 +49,6 @@ function Page() {
         changePage={changePage}
       />
       {renderPage()}
-      <Footer />
     </div>
   );
 }

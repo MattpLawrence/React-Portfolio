@@ -1,3 +1,21 @@
+.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0rem;
+  margin-top: 3rem;
+}
+.icons li svg {
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.icons li svg:hover {
+  color: #4aaeca;
+  transform: scale(1.2);
+}
+.icons li {
+  margin: 2rem 1rem;
+}
 ul {
   list-style-type: none;
 }
