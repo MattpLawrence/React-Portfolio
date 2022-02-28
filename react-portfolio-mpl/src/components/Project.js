@@ -1,5 +1,6 @@
 import React from "react";
 import projectList from "../assets/projectList";
+import "../styles/Project.css";
 
 function Project() {
   // let projectCards = projectList.map((proj) => {
@@ -36,7 +37,7 @@ function Project() {
 
   return projectList.map((proj, i) => (
     <div key={i}>
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card" style={{ width: "30rem" }}>
         <img
           src={proj.imgSrc}
           className="card-img-top"
