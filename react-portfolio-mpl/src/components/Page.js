@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 import Project from "./Project";
 import Contact from "./Contact";
+import "../styles/Page.css";
 
 function Page() {
   // set state to pass down to nav
@@ -19,7 +20,11 @@ function Page() {
     if (pageNav == "About") {
       return <About />;
     } else if (pageNav == "Project") {
-      return <Project />;
+      return (
+        <div className="cardContainer">
+          <Project />
+        </div>
+      );
     } else if (pageNav == "Contact") {
       return <Contact />;
     } else {

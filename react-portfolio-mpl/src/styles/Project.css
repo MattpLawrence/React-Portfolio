@@ -1,4 +1,5 @@
-.card {
-  flex-wrap: wrap;
-  justify-content: center;
+.cardContainer .card {
+  margin: 2rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgb(240, 240, 240);
 }
