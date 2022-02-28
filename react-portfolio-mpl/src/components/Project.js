@@ -1,10 +1,12 @@
 import React from "react";
-import projectList from "./subComponents/projectList";
+import projectList from "../assets/projectList";
 
 function Project() {
   return (
     <div>
-      <h1>Project</h1>
+      {projectList.map((proj) => {
+        <div></div>;
+      })}
     </div>
   );
 }
