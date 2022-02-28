@@ -10,17 +10,27 @@ function Footer() {
       <ul className="icons">
         <li className="contactLI">
           <FontAwesomeIcon icon={faEnvelope} className="fa" />
-          <a href="mailto: MattphLawrence@gmail.com"></a>
+          <a href="mailto: MattphLawrence@gmail.com"> </a>
         </li>
         <li className="contactLI">
           <FontAwesomeIcon icon={faLinkedin} className="fa" />
-          <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mattplawrence/"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
           </a>
         </li>
         <li className="contactLI">
           <FontAwesomeIcon icon={faGithub} className="fa" />
-          <a href="https://github.com/MattpLawrence" target="_blank"></a>
+          <a
+            href="https://github.com/MattpLawrence"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+          </a>
         </li>
       </ul>
     </div>

@@ -6,11 +6,7 @@ function About() {
     <div>
       <section id="one">
         <div data-position="center">
-          <img
-            src="images/meAvatar.jpg"
-            className="imgMain"
-            alt="Profile Picture"
-          />
+          <img src="images/meAvatar.jpg" className="imgMain" alt="Profile" />
         </div>
         <div className="container">
           <header className="major">

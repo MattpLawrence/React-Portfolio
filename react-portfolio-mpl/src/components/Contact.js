@@ -14,14 +14,22 @@ function Contact() {
         </li>
         <li className="contactLI">
           <FontAwesomeIcon icon={faLinkedin} className="fa" />
-          <a href="https://www.linkedin.com/in/mattplawrence/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mattplawrence/"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
             MattpLawrence
           </a>
         </li>
         <li className="contactLI">
           <FontAwesomeIcon icon={faGithub} className="fa" />
-          <a href="https://github.com/MattpLawrence" target="_blank">
+          <a
+            href="https://github.com/MattpLawrence"
+            target="_blank"
+            rel="noreferrer"
+          >
             MattpLawrence
           </a>
         </li>

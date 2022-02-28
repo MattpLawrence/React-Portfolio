@@ -8,9 +8,7 @@ function Navigation(props) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Matt Lawrence
-          </a>
+          <a className="navbar-brand">Matt Lawrence</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,9 +25,8 @@ function Navigation(props) {
               <li className="nav-item">
                 <a
                   className={
-                    pageNav == "About" ? "nav-link active" : "nav-link"
+                    pageNav === "About" ? "nav-link active" : "nav-link"
                   }
-                  href="#"
                   onClick={changePage}
                   name="About"
                 >
@@ -39,9 +36,8 @@ function Navigation(props) {
               <li className="nav-item">
                 <a
                   className={
-                    pageNav == "Project" ? "nav-link active" : "nav-link"
+                    pageNav === "Project" ? "nav-link active" : "nav-link"
                   }
-                  href="#"
                   onClick={changePage}
                   name="Project"
                 >
@@ -51,9 +47,8 @@ function Navigation(props) {
               <li className="nav-item">
                 <a
                   className={
-                    pageNav == "Contact" ? "nav-link active" : "nav-link"
+                    pageNav === "Contact" ? "nav-link active" : "nav-link"
                   }
-                  href="#"
                   onClick={changePage}
                   name="Contact"
                 >
