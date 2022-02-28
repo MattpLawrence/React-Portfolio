@@ -34,23 +34,23 @@ function Project() {
   //   return projectCards;
   // });
 
-  return projectList.map((proj) => (
+  return projectList.map((proj, i) => (
     <div key={i}>
       <div className="card" style={{ width: "18rem" }}>
         <img
-          src={imgSrc}
+          src={proj.imgSrc}
           className="card-img-top"
-          alt={imgAlt}
-          href={appHref}
+          alt={proj.imgAlt}
+          href={proj.appHref}
         ></img>
         <div className="card-body">
-          <h5 className="card-title">{name}</h5>
-          <p className="card-text">{description}</p>
+          <h5 className="card-title">{proj.name}</h5>
+          <p className="card-text">{proj.description}</p>
         </div>
 
         <div className="card-body">
-          <a href={gitHref} className="card-link">
-            Card link
+          <a href={proj.gitHref} className="card-link">
+            View My Project
           </a>
         </div>
       </div>
