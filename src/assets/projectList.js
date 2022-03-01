@@ -18,7 +18,7 @@ const projectList = [
       "A one page dashboard were you can search by city to find the weather. The page displays today's weather in depth as well as the upcoming five day forecast.",
   },
   {
-    imgSrc: "images/YouTubeSmall.png",
+    imgSrc: "images/YoutubeSmall.png",
     imgAlt: "YouTube Music Application",
     appHref: "https://github.com/MattpLawrence/YouTube_Music_Finder",
     gitHref: "https://github.com/MattpLawrence/YouTube_Music_Finder",
